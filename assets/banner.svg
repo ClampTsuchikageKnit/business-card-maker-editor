@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101820"/>
+      <stop offset="0.55" stop-color="#161f2b"/>
+      <stop offset="1" stop-color="#1c2733"/>
+    </linearGradient>
+    <linearGradient id="cardGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4d78e"/>
+      <stop offset="1" stop-color="#c8952f"/>
+    </linearGradient>
+    <linearGradient id="cardDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3947"/>
+      <stop offset="1" stop-color="#1a2430"/>
+    </linearGradient>
+    <linearGradient id="cardCream" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf6e8"/>
+      <stop offset="1" stop-color="#e9dcc0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f4d78e" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#f4d78e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- soft ambient glow -->
+  <ellipse cx="900" cy="180" rx="380" ry="260" fill="url(#glow)"/>
+
+  <!-- fine grid texture -->
+  <g stroke="#f4d78e" stroke-opacity="0.05">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- stacked business cards on right side -->
+  <g>
+    <rect x="835" y="205" width="270" height="150" rx="14" fill="url(#cardDark)" stroke="#3a4a5a" stroke-width="1" transform="rotate(-8 970 280)" opacity="0.9"/>
+    <rect x="855" y="160" width="270" height="150" rx="14" fill="url(#cardGold)" stroke="#a97a24" stroke-width="1" transform="rotate(4 990 235)" opacity="0.95"/>
+    <rect x="845" y="110" width="270" height="150" rx="14" fill="url(#cardCream)" stroke="#cbb98a" stroke-width="1" transform="rotate(-3 980 185)"/>
+
+    <!-- details on top cream card -->
+    <g transform="rotate(-3 980 185)">
+      <rect x="865" y="132" width="60" y2="0" height="8" rx="2" fill="#c8952f" x2="0"/>
+      <rect x="865" y="132" width="60" height="8" rx="2" fill="#c8952f"/>
+      <line x1="865" y1="158" x2="1020" y2="158" stroke="#7a6a49" stroke-width="2"/>
+      <line x1="865" y1="176" x2="990" y2="176" stroke="#a89b76" stroke-width="1.5"/>
+      <line x1="865" y1="192" x2="960" y2="192" stroke="#a89b76" stroke-width="1.5"/>
+      <circle cx="1075" cy="220" r="20" fill="none" stroke="#c8952f" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- decorative corner flourish lines -->
+  <g stroke="#f4d78e" stroke-opacity="0.35" stroke-width="1.5" fill="none">
+    <path d="M60 300 Q 140 260 220 300"/>
+    <path d="M60 312 Q 140 272 220 312"/>
+  </g>
+
+  <!-- small binary/mono accent dots suggesting "single binary" -->
+  <g fill="#f4d78e" fill-opacity="0.5">
+    <circle cx="70" cy="70" r="3"/>
+    <circle cx="90" cy="70" r="3"/>
+    <circle cx="110" cy="70" r="3"/>
+  </g>
+
+  <text x="64" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="72" fill="#fdf6e8" textLength="700" lengthAdjust="spacingAndGlyphs">
+    Business Card
+  </text>
+  <text x="64" y="228" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="72" fill="url(#cardGold)" textLength="300" lengthAdjust="spacingAndGlyphs">
+    Maker
+  </text>
+
+  <text x="64" y="272" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#c9d3dc" textLength="700" lengthAdjust="spacingAndGlyphs">
+    Generates business cards with built-in templates
+  </text>
+  <text x="64" y="302" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#c8952f" textLength="280" lengthAdjust="spacingAndGlyphs">
+    single binary
+  </text>
+</svg>
